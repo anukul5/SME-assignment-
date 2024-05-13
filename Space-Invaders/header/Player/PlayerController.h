@@ -3,10 +3,12 @@
 #include "../Collision/ICollider.h"
 #include "../../header/Powerup/PowerupConfig.h"
 #include "../../header/Player/PlayerModel.h"
-#include "../../header/Player/PlayerView.h"
+
 
 namespace Player
 {
+    class PlayerView;
+
     class PlayerController : public Collision::ICollider
     {
     private:
@@ -23,6 +25,7 @@ namespace Player
         void processPlayerInput();
         void moveLeft();
         void moveRight();
+        void processBulletFire();
 
         bool processPowerupCollision(ICollider* other_collider);
         bool processEnemyCollision(ICollider* other_collider);

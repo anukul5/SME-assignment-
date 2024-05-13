@@ -1,5 +1,5 @@
 #pragma once
-#include <SFML/Graphics.hpp>
+#include "../../sfml/include/SFML/Graphics.hpp"
 #include "../../header/Global/ServiceLocator.h"
 
 namespace Main
